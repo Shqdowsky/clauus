@@ -1,0 +1,497 @@
+@charset "UTF-8";
+/* Обнуление */
+*,
+*::before,
+*::after {
+   padding: 0;
+   margin: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+ul,
+ol,
+li {
+   list-style: none;
+   font-size: 20px;
+}
+
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: inherit;
+   font-size: inherit;
+}
+
+html,
+body {
+   height: 100%;
+   line-height: 1;
+   font-family: Rubik;
+   overflow: auto;
+   color: black;
+}
+
+/* ---------------------------------------------------------------------------- */
+.wrapper {
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+.title__center{
+   text-align: center;
+}
+
+/* ---------------------------------------------------------------------------- */
+/*---------------------------------------------------*/
+.main {
+   flex: 1 1 auto;
+}
+
+[class*=__container] {
+   max-width: 1950px;
+   margin: 0px auto;
+   padding: 0px 15px;
+}
+
+@media (max-width: 991.98px) {
+   [class*=__container] {
+      max-width: 900px;
+   }
+}
+@media (max-width: 767.98px) {
+   [class*=__container] {
+      max-width: none;
+   }
+}
+.snow{
+   pointer-events: none;
+   position: absolute;
+   z-index: 1;
+   width: 100%;
+	height: 627px;
+}
+.snow img{
+   width: 100%;
+   height: 100%;
+}
+/*---------------------------------------------------*/
+/*---Header------------------------------------------------*/
+.header {
+   position: absolute;
+   position: fixed;
+   width: 100%;
+   z-index: 50;
+}
+.header__bg {
+   position: absolute;
+   width: 100%;
+   height: 100px;
+   background-color: rgb(0, 255, 255);
+   opacity: 0.1;
+   box-shadow: 0px 8px 8px rgb(63, 62, 62);
+}
+.header__container {
+   padding: 10px 50px;
+   position: relative;
+   z-index: 2;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.header__logo {
+}
+.header__menu {
+}
+.menu {
+}
+.menu__items {
+   display: flex;
+   align-items: center;
+}
+.menu__item:not(:last-child) {
+   margin-right: 50px;
+}
+.menu__item a{
+   font-size: 20px;
+   color: rgb(255, 255, 255);
+   text-shadow: 2px 2px 1px rgb(0, 0, 0);
+}
+
+.header__icons{
+   
+}
+.header__icon:not(:last-child) {
+   margin-right: 25px;
+}
+.header__icon1 {
+}
+.header__icon2 {
+}
+/*---------------------------------------------------*/
+/*---Token------------------------------------------------*/
+.token {
+   position: relative;
+}
+.token__container {
+}
+.token__body {
+   padding-top: 140px;
+   position: relative;
+   z-index: 2;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.token__bg{
+}
+.token__bg img{
+   position: absolute;
+	width: 100%;
+	height: 627px;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+.token__nft {
+   margin-right: 50px;
+}
+.token__text-block img{
+
+}
+/*---------------------------------------------------*/
+/*---About us------------------------------------------------*/
+.aboutus {
+   padding-top: 70px;
+   padding-bottom: 70px;
+   position: relative;
+   z-index: 2;
+   width: 100%;
+   color: rgb(32, 210, 255);
+}
+.aboutus__container {
+}
+.aboutus__body {
+   position: relative;
+   z-index: 2;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.body-aboutus {
+}
+.body-aboutus__title {
+   font-size: 120px;
+   color: #fff;
+   text-shadow: 1px 1px 10px #000;
+   margin-bottom: 30px;
+}
+.body-aboutus__bg {
+   background-image: url("../img/aboutus/bg.png");
+   display: flex;
+   background-size: 1060px 427px;
+   background-repeat: no-repeat;
+   padding: 30px 50px;
+}
+
+.body-aboutus__text {
+   max-width: 1000px;
+   color: #fff;
+   font-size: 30px;
+   line-height: 150%;
+   text-shadow: 2px 2px 1px #000;
+}
+.body-aboutus__text p{
+   margin-bottom: 25px;
+}
+
+.santa{
+   position: absolute;
+
+   z-index: 49;
+   right: 0;
+   bottom: 0;
+   display: flex;
+}
+.santa img{
+   cursor: pointer;
+}
+.message{
+   display: none;
+}
+.active{
+   display: block;
+}
+/*---------------------------------------------------*/
+/*---Tokenomics------------------------------------------------*/
+.tokenomics {
+   padding-top: 70px;
+   padding-bottom: 70px;
+}
+.tokenomics__container {
+}
+.tokenomics__body {
+   position: relative;
+   z-index: 2;
+}
+.tokenomics__title {
+   margin-bottom: 50px;
+
+}
+.tokenomics__subtitle {
+   margin-bottom: 70px;
+}
+.map {
+   color: #fff;
+   text-shadow: 2px 2px 3px #000;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 30px;
+
+}
+.map__item{
+   background-repeat: no-repeat;
+   padding: 20px 22px 50px 22px;
+}
+.map__item:not(:last-child){
+   margin-right: 20px;
+}
+.map__item1 {
+   background-image: url("../img/token/1.png");
+   background-size: 100% 330px;
+}
+.map-item1 {
+}
+.map-item__title{
+   font-size: 18px;
+   text-align: center;
+   margin-bottom: 10px;
+}
+.map-item1__title {
+}
+.map-item__body {
+   display: flex;
+   justify-content: space-between;
+}
+.body-map-item1 {
+}
+.body-map-item__buy img, .body-map-item__sell img{
+   margin-bottom: 20px;
+}
+.buy {
+}
+.body-map-item__text{
+   font-size: 40px;
+   text-align: center;
+}
+.map-item2, .map__item3, .map__item4{
+   background-image: url("../img/token/2.png");
+   background-size: 100% 330px;
+}
+.map__item5{
+   background-image: url("../img/token/3.png");
+   background-size: 100% 330px;
+}
+/*---------------------------------------------------*/
+/*---Rewards------------------------------------------------*/
+.rewards {
+   padding-top: 70px;
+   padding-bottom: 70px;
+}
+.rewards__container {
+}
+.rewards__body > *:not(:last-child){
+   margin-bottom: 40px;
+}
+.rewards__body{
+   position: relative;
+   z-index: 2;
+}
+.rewards__title {
+
+}
+.rewards__subtitle img{
+
+}
+.rewards__nftes {
+   display: flex;
+   justify-content: space-between;
+   padding: 0px 25px;
+
+}
+.nft-card {
+   display: flex;
+   flex-direction: column;
+}
+.nft-card__body{
+   background-color: rgb(14, 239, 255);
+   border: solid black;
+   padding: 20px;
+   color: #fff;
+   font-size: 30px;
+   text-shadow: 2px 2px 3px #000;
+   margin-bottom: 15px;
+}
+.nft-card__image {
+   margin-bottom: 10px;
+}
+.nft-card__title {
+   margin-bottom: 8px;
+}
+.nft-card__price {
+}
+.nft1__time {
+}
+/*---------------------------------------------------*/
+/*---Remuneration------------------------------------------------*/
+.remuneration {
+   padding-top: 70px;
+   padding-bottom: 70px;
+}
+.remuneration__body {
+   position: relative;
+   z-index: 2;
+}
+.remuneration__title {
+   margin-bottom: 40px;
+}
+.remuneration__cards {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 30px;
+}
+.cards-remuneration {
+}
+.cards-remuneration__card1 {
+}
+.card {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.card__body {
+   background-color: rgb(14, 239, 255);
+   border: solid black;
+   padding: 20px;
+   margin-bottom: 15px;
+}
+.card__image {
+}
+.card__rewards {
+   display: flex;
+   flex-direction: column;
+}
+/*---------------------------------------------------*/
+/*---Roadmap------------------------------------------------*/
+.roadmap {
+   padding-top: 70px;
+   padding-bottom: 70px;
+}
+.roadmap__container {
+}
+.roadmap__body {
+}
+.roadmap__title {
+   margin-bottom: 50px;
+}
+.roadmap__cards1{
+}
+.roadmap-cards {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+}
+.roadmap-cards__card1 {
+}
+.roadmap-card {
+   flex: 0 1 27%;
+   background-color: rgb(14, 239, 255);
+   border: solid black;
+   padding: 20px;
+   height: 300px;
+   color: #fff;
+   font-size: 30px;
+   text-shadow: 2px 2px 3px #000;
+   margin-bottom: 25px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.roadmap-card__number{
+   margin-bottom: 15px;
+}
+.roadmap-cards__arrown{
+   display: none;
+}
+.roadmap-card__items {
+}
+.roadmap-card__item {
+   font-size: 30px;
+   list-style:disc;
+   margin-left: 20px;
+}
+.roadmap-card__item:not(:last-child){
+   margin-bottom: 15px;
+}
+.roadmap__cards2 {
+}
+/*---------------------------------------------------*/
+/*---Presents------------------------------------------------*/
+.presents {
+   padding-top: 70px;
+   padding-bottom: 70px;
+}
+.presents__container {
+}
+.presents__body {
+}
+.presents__title {
+   margin-bottom: 40px;
+}
+.presents__cards {
+}
+.presents-cards {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.presents-cards__column{
+   padding: 0px 10px;
+   margin-bottom: 40px;
+}
+.presents-cards__card {
+   background-color: rgb(14, 239, 255);
+   border: solid black;
+   padding: 15px;
+   flex: 0 1 20%;
+}
+.presents-card {
+}
+.presents-card__img {
+}
+.presents__subtitle{
+   margin-bottom: 10px;
+}
+/*---------------------------------------------------*/
+/*---Footer------------------------------------------------*/
+.footer{
+   width: 100%;
+}
+.footer img{
+   width: 100%;
+   height: 100px;
+}
